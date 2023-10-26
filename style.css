@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font1;
+    src: url();
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(111, 0, 162, 1) 38%);
+}
+
+
+header {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 1.5em;
+    text-shadow: #161616 0px 0px 20px, #fff 0px 0px 30px, #e9e903 0px 0px 40px;
+}
+
+.container {
+    height: 25em;
+    width: 40em;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: groove;
+    margin-top: 3%;
+
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+
+.bar {
+    background-color: #0f0f0f;
+    width: 45px;
+    height: 10px;
+    margin: 6px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.bar:hover {
+    background-color: #680000;
+
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+
+
+footer {
+    margin: 0;
+    margin-top: 37%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+}
